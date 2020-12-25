@@ -1,0 +1,40 @@
+Notwendige Module und ihre installation
+
+1: Projekt Initialisieren mit default Werten
+	npm init -y
+	
+2: notwendige Module
+	npm i express jsonwebtoken dotenv
+	npm i --save-dev nodemon
+	
+3: Visual Studio Code Extensions:
+	Rest Client
+	-> macht REST Posts/Gets auds VSC heraus
+	
+	
+4. DEBUG
+	nach Auswahl des Debug Buttons am linken Rand läßt sich ein launch.json 
+	Konfigurationsfile erstellen (Voreinstellung Node.js)
+	
+	Unter programm muß das LaunchProgramm geändert werden.
+	Hier die gesamte launch.json:
+	
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\server.js"
+        }
+    ]
+}
+	
